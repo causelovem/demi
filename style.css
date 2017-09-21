@@ -76,23 +76,221 @@ body
 p
 {
   font-family: RobotoCondensed-Regular;
-  font-size: 20pt;
+  font-size: 20px;
 }
 
 h1
 {
   font-family: Raleway-Bold;
-  font-size: 36pt; 
+  font-size: 36px; 
 }
 
 h2
 {
   font-family: Raleway-Bold;
-  font-size: 30pt; 
+  font-size: 30px; 
 }
 
 h3
 {
   font-family: Raleway-Medium;
-  font-size: 24pt; 
+  font-size: 24px; 
+}
+
+h4
+{
+  font-family: Raleway-Regular;
+  font-size: 30px;
+}
+
+.centerBlock
+{
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  height: inherit;
+}
+
+.mainBlock
+{
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.nav
+{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 97px;
+  z-index: 2;
+  position: absolute;
+}
+
+.imgMain
+{
+  z-index: -1;
+  width: 1920px;
+  left: calc(50% - 960px);
+  position: absolute;
+}
+
+.navButton
+{
+  float: right;
+  height: inherit;
+  line-height: 97px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #FFF;
+  transition: all 0.3s;
+}
+
+.navButton:hover
+{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mainText
+{
+  position: absolute;
+  /*background-color: red;*/
+  height: 200px;
+  width: 1140px;
+  text-align: center;
+  top: calc(50% - 100px);
+}
+
+#mainTextBig
+{
+  font-family: Raleway-Medium;
+  font-size: 115px;
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  padding-bottom: 20px;
+}
+
+#mainTextSmall
+{
+  font-family: RobotoCondensed-Regular;
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.moreButton
+{
+  position: absolute;
+  width: 190px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 75%;
+  left: calc(50% - 95px);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.moreButton:hover
+{
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.buttonText
+{
+  font-family: Raleway-Bold;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.serviceBlock
+{
+  background-color: #F0F0F0;
+}
+
+.serviceBlockType
+{
+  background-color: #FFF;
+}
+
+.templateBlock
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.templateBlock h1, .templateBlock p
+{
+  width: 760px;
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+
+.content
+{
+  width: 100%;
+  height: 449px;
+  margin-top: 10px;
+}
+
+.colom
+{
+  width: 33.33%;
+  height: inherit;
+  float: left;
+}
+
+.serviceBlockType
+{
+  width: 358px;
+  height: inherit;
+  margin: 0 auto;
+  background-color: #FFF;
+  position: relative;
+  cursor: pointer;
+  border: 0.5px solid black;
+  transition: all 0.3s;
+}
+
+.serviceBlockType img
+{
+  width: 236px;
+  position: absolute;
+  left: calc(50% - 118px);
+}
+
+.serviceBlockType h4
+{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.serviceBlockType h4
+{
+  width: 100%;
+  position: absolute;
+  top: 55%;
+  text-align: center;
+}
+
+.serviceBlockType p
+{
+  width: 80%;
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  text-align: center;
+}
+
+.serviceBlockType:hover .serviceIcon
+{
+  opacity: 0;
+}
+
+.serviceBlockType:hover
+{
+  box-shadow: 0 0 0 6px #B6D1DF;
 }
