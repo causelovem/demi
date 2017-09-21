@@ -127,12 +127,13 @@ h4
   position: absolute;
 }
 
-.imgMain
+.imgMain, .imgAbout
 {
   z-index: -1;
   width: 1920px;
   left: calc(50% - 960px);
   position: absolute;
+  top: -50px;
 }
 
 .navButton
@@ -154,7 +155,6 @@ h4
 .mainText
 {
   position: absolute;
-  /*background-color: red;*/
   height: 200px;
   width: 1140px;
   text-align: center;
@@ -182,7 +182,7 @@ h4
 {
   position: absolute;
   width: 190px;
-  height: 44px;
+  height: 49px;
   background-color: rgba(255, 255, 255, 0.8);
   top: 75%;
   left: calc(50% - 95px);
@@ -199,13 +199,14 @@ h4
 {
   font-family: Raleway-Bold;
   font-size: 20px;
-  line-height: 44px;
+  line-height: 49px;
   text-align: center;
 }
 
 .serviceBlock
 {
   background-color: #F0F0F0;
+  height: 625px;
 }
 
 .serviceBlockType
@@ -227,17 +228,11 @@ h4
   margin: 0 auto;
 }
 
-.content
-{
-  width: 100%;
-  height: 449px;
-  margin-top: 10px;
-}
-
 .colom
 {
+  margin-top: 10px;
   width: 33.33%;
-  height: inherit;
+  height: 449px;
   float: left;
 }
 
@@ -293,4 +288,61 @@ h4
 .serviceBlockType:hover
 {
   box-shadow: 0 0 0 6px #B6D1DF;
+}
+
+.aboutBlock
+{
+  overflow: hidden;
+  height: 580px;
+  position: relative;
+}
+
+.aboutBlock h1
+{
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.aboutContent
+{
+  width: 760px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: calc(50% - 380px);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.aboutContent p
+{
+  width: 85%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.button
+{
+  width: 190px;
+  height: 49px;
+  background-color: #000;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+
+.button p
+{
+  color: #FFF;
+  text-align: center;
+  line-height: 49px;
+}
+
+.button:hover
+{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imgAbout
+{
+  top: -120px;
 }
