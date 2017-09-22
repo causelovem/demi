@@ -421,10 +421,10 @@ h4
 {
   /*position: relative;*/
   overflow: hidden;
-  height: 700px;
+  height: 790px;
 }
 
-.transferHeaders 
+.transferBlock h1
 {
   color: #FFF;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
@@ -433,63 +433,137 @@ h4
 .transferContent
 {
   width: 950px;
+  height: 650px;
   background-color: rgba(255, 255, 255, 0.9);
-  /*background-color: #F0F0F0;*/
-  /*background-color: rgba(240, 240, 240, 0.9);*/
   position: absolute;
   left: calc(50% - 475px);
   padding-top: 30px;
   padding-bottom: 40px;
   position: relative;
-  transition: all 0.3s;
 }
 
-/*.transferDestTitle
+.transferDestTitle
 {
-  width: 50%;
+  font-family: Raleway-Regular;
+  font-size: 20px;
+  width: calc(100% - 12px);
   text-align: center;
-  position: absolute;
-}*/
-
-/*#from
-{
-  left: 20px;
 }
-
-#where
-{
-  right: 20px;
-}*/
 
 .transferFromColom, .transferWhereColom
 {
   width: 25%;
-  /*background-color: red;*/
-  /*height: 500px;*/
+  position: absolute;
+  top: 100px;
 }
 
-.transferFrom
+.transferFromColom
 {
-  width: 264px;
+  left: 10%;
+}
+
+.transferWhereColom
+{
+  right: 10%;
+}
+
+.transferFrom, .transferWhere
+{
+  width: calc(100% - 12px);
   height: 35px;
   background-color: #FFF;
   border: 0.5px solid #000;
   text-align: center;
   line-height: 35px;
-}
-
-.transferWhere
-{
-  width: 264px;
-  height: 35px;
-  background-color: #FFF;
-  border: 0.5px solid #000;
-  text-align: center;
-  line-height: 35px;
+  margin: 20px 0;
+  transition: all 0.3s;
 }
 
 .transferFrom:hover, .transferWhere:hover
 {
   /*border: 9px solid #B6D1DF;*/
-  border: 9px solid #DBDCDE;
+  box-shadow: 0 0 0 6px #DBDCDE;
 }
+
+#transferButton
+{
+  position: absolute;
+  left: calc(50% - 95px);
+  bottom: 40px;
+}
+
+.transferPrice
+{
+  width: 190px;
+  height: 49px;
+  text-align: center;
+  line-height: 49px;
+  position: absolute;
+  left: calc(50% - 95px);
+  top: 250px;
+}
+
+.kargoBlock
+{
+  height: 360px;
+}
+
+.kargoContent
+{
+  background-color: #F0F0F0;
+  width: 950px;
+  position: absolute;
+  left: calc(50% - 475px);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.contacts
+{
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgContact
+{
+  z-index: -1;
+  width: 1920px;
+  left: calc(50% - 960px);
+  position: absolute;
+}
+
+.contactContent
+{
+  width: 50%;
+  height: inherit;
+  position: absolute;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.cotactText
+{
+  width: 475px;
+  height: inherit;
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*background-color: blue;*/
+}
+
+.cotactText h1
+{
+  width: 100%;
+  text-align: center;
+}
+
+.cotactText p
+{
+  /*background-color: red;*/
+  width: 400px;
+  /*position: absolute;*/
+  /*left: 5px;*/
+  text-align: center;
+  /*margin: 20px 0;*/
+}
+
