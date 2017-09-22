@@ -127,7 +127,7 @@ h4
   position: absolute;
 }
 
-.imgMain, .imgAbout
+.imgMain, .imgAbout, .imgTransfer
 {
   z-index: -1;
   width: 1920px;
@@ -195,7 +195,7 @@ h4
   background-color: rgba(255, 255, 255, 1);
 }
 
-.buttonText
+#buttonText
 {
   font-family: Raleway-Bold;
   font-size: 20px;
@@ -218,6 +218,8 @@ h4
 {
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+  /*overflow: hidden;*/
 }
 
 .templateBlock h1, .templateBlock p
@@ -294,7 +296,7 @@ h4
 {
   overflow: hidden;
   height: 580px;
-  position: relative;
+  /*position: relative;*/
 }
 
 .aboutBlock h1
@@ -335,6 +337,7 @@ h4
   color: #FFF;
   text-align: center;
   line-height: 49px;
+  width: 100%;
 }
 
 .button:hover
@@ -345,4 +348,148 @@ h4
 .imgAbout
 {
   top: -120px;
+}
+
+.shoppingBlock
+{
+  height: 1030px;
+}
+
+.shoppingNav
+{
+  width: 100%;
+  height: 54px;
+}
+
+.shoppingTab
+{
+  float: left;
+  width: calc(25% - 2px);
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+  border-top: 9px solid #DBDCDE;
+}
+
+.shoppingTab:hover
+{
+  /*background-color: #F2F3F3;*/
+  border-top: 9px solid #B6D1DF;
+}
+
+.shoppingInfoContent
+{
+  position: relative;
+  overflow: hidden;
+  height: 770px;
+  width: 100%;
+}
+
+
+.imgShopping
+{
+  z-index: -1;
+  width: 1440px;
+  left: calc(50% - 720px);
+  position: absolute;
+}
+
+.shoppingTextBlock
+{
+  background-color: rgb(255, 255, 255, 0.9);
+  width: 60%;
+  height: inherit;
+}
+
+.shoppingTextBlock h2
+{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.shoppingTextBlock p
+{
+  width: 80%;
+  text-align: left;
+}
+
+.transferBlock
+{
+  /*position: relative;*/
+  overflow: hidden;
+  height: 700px;
+}
+
+.transferHeaders 
+{
+  color: #FFF;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}
+
+.transferContent
+{
+  width: 950px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /*background-color: #F0F0F0;*/
+  /*background-color: rgba(240, 240, 240, 0.9);*/
+  position: absolute;
+  left: calc(50% - 475px);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+/*.transferDestTitle
+{
+  width: 50%;
+  text-align: center;
+  position: absolute;
+}*/
+
+/*#from
+{
+  left: 20px;
+}
+
+#where
+{
+  right: 20px;
+}*/
+
+.transferFromColom, .transferWhereColom
+{
+  width: 25%;
+  /*background-color: red;*/
+  /*height: 500px;*/
+}
+
+.transferFrom
+{
+  width: 264px;
+  height: 35px;
+  background-color: #FFF;
+  border: 0.5px solid #000;
+  text-align: center;
+  line-height: 35px;
+}
+
+.transferWhere
+{
+  width: 264px;
+  height: 35px;
+  background-color: #FFF;
+  border: 0.5px solid #000;
+  text-align: center;
+  line-height: 35px;
+}
+
+.transferFrom:hover, .transferWhere:hover
+{
+  /*border: 9px solid #B6D1DF;*/
+  border: 9px solid #DBDCDE;
 }
