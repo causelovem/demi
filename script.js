@@ -1,7 +1,7 @@
 /*BUTTONS TO GO*/
 $(document).ready(function()
 {
-    $('#contactsButton').click( function()
+    $('#contactsNavButton').click( function()
     {
         var scroll_el = $(this).attr('href');
         if ($(scroll_el).length != 0) 
@@ -172,3 +172,22 @@ function hoveroutFW(id)
     $('#' + id).css({'box-shadow': ''});
 }
 /*******/
+
+
+$(document).ready(function()
+{
+    $('.contactsButton').click( function()
+    {
+        $('.transparentLayer').css("display", "block");
+        $('.contactsFixed').css("display", "block");
+    });
+});
+
+$(document).ready(function()
+{
+    $('.transparentLayer').click( function()
+    {
+        $('.transparentLayer').css("display", "none");
+        $('.contactsFixed').css("display", "none");
+    });
+});
