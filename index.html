@@ -15,13 +15,13 @@
         
             <div class="nav" id="topNav">
                 <div class="centerBlock">
-                    <div class="navButton" id="contactsButton" href="#twitchBoard">
+                    <div class="navButton" id="contactsButton" onclick="goToBlockByID(id)" href=".contacts">
                         <h3>Контакты</h3>
                     </div>
-                    <div class="navButton" id="aboutButton">
+                    <div class="navButton" id="aboutButton" onclick="goToBlockByID(id)" href=".aboutBlock">
                         <h3>О нас</h3>
                     </div>
-                    <div class="navButton" id="serviceButton">
+                    <div class="navButton" id="serviceButton" onclick="goToBlockByID(id)" href=".serviceBlock">
                         <h3>Услуги</h3>
                     </div>
 
@@ -35,7 +35,7 @@
                     <p id="mainTextSmall">фывафывафвыафвавфыа</p>
                 </div>
 
-                <div class="moreButton">
+                <div id="moreButton" href=".serviceBlock">
                     <p id="buttonText">ПОДРОБНЕЕ</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.</p>
                 <div class="colom">
-                    <div class="serviceBlockType" id="shopping">
+                    <div class="serviceBlockType" id="shoppingPreview" href=".shoppingBlock">
                         <img src="img/iconShopping.png">
                         <img class="serviceIcon" src="img/iconShoppingBW.png">
                         <h4>Шоппинг Тур</h4>
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="colom">
-                    <div class="serviceBlockType" id="transfer">
+                    <div class="serviceBlockType" id="transferPreview" href=".transferBlock">
                         <img src="img/iconTransfer.png">
                         <img class="serviceIcon" src="img/iconTransferBW.png">
                         <h4>Трансфер</h4>
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="colom">
-                    <div class="serviceBlockType" id="cargo">
+                    <div class="serviceBlockType" id="cargoPreview" href=".kargoBlock">
                         <img src="img/iconCargo.png">
                         <img class="serviceIcon" src="img/iconCargoBW.png">
                         <h4>Карго</h4>
@@ -101,25 +101,25 @@
 
                 <div class="shoppingContent">
                     <div class="shoppingNav">
-                        <div class="shoppingTab">
+                        <div class="shoppingTab" id="st-marinoShoppingTab" onclick="changeShopping('st-marinoShopping')" onmouseover="hoveroverTab(id)" onmouseout="hoveroutTab(id)">
                             <h3>Сан-Марино</h3>
                         </div>
-                        <div class="shoppingTab">
+                        <div class="shoppingTab" id="riminiShoppingTab" onclick="changeShopping('riminiShopping')" onmouseover="hoveroverTab(id)" onmouseout="hoveroutTab(id)">
                             <h3>Римини</h3>
                         </div>
-                        <div class="shoppingTab">
+                        <div class="shoppingTab" id="boloniaShoppingTab" onclick="changeShopping('boloniaShopping')" onmouseover="hoveroverTab(id)" onmouseout="hoveroutTab(id)">
                             <h3>Болонья</h3>
                         </div>
-                        <div class="shoppingTab">
+                        <div class="shoppingTab" id="rg-markeShoppingTab" onclick="changeShopping('rg-markeShopping')" onmouseover="hoveroverTab(id)" onmouseout="hoveroutTab(id)">
                             <h3>Регион Марке</h3>
                         </div>
                     </div>
                     <div class="shoppingInfo">
                         <div class="shoppingInfoContent">
-                            <img class="imgShopping" src="img/imgShopping.jpg">
+                            <div class="shoppingTextBlock" id="st-marinoShoppingBlock">
+                                <img class="imgShopping" src="img/imgShopping.jpg">
 
-                            <div class="shoppingTextBlock">
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                                <h2>Сан-Марино Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -137,31 +137,70 @@
                                     <p id="buttonText">СВЯЗАТЬСЯ</p>
                                 </div>
                             </div>
-                        <!-- </div>
-                        <div class="shoppingInfoContent">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <div class="shoppingTextBlock" id="riminiShoppingBlock">
+                                <img class="imgShopping" src="img/imgShopping.jpg">
+
+                                <h2>Римини Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+
+                                <div class="button" id="shoppingButton">
+                                    <p id="buttonText">СВЯЗАТЬСЯ</p>
+                                </div>
+                            </div>
+                            <div class="shoppingTextBlock" id="boloniaShoppingBlock">
+                                <img class="imgShopping" src="img/imgShopping.jpg">
+
+                                <h2>Болонья Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+
+                                <div class="button" id="shoppingButton">
+                                    <p id="buttonText">СВЯЗАТЬСЯ</p>
+                                </div>
+                            </div>
+                            <div class="shoppingTextBlock" id="rg-markeShoppingBlock">
+                                <img class="imgShopping" src="img/imgShopping.jpg">
+
+                                <h2>Регион МаркеLorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+
+                                <div class="button" id="shoppingButton">
+                                    <p id="buttonText">СВЯЗАТЬСЯ</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="shoppingInfoContent">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="shoppingInfoContent">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -181,16 +220,16 @@
                             <h5>Откуда</h5>
                         </div>
 
-                        <div class="transferFrom">
+                        <div class="transferF" id="st-marinoF" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Сан-Марино</h3>
                         </div>
-                        <div class="transferFrom">
+                        <div class="transferF" id="riminiF" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Римини</h3>
                         </div>
-                        <div class="transferFrom">
+                        <div class="transferF" id="boloniaF" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Болонья</h3>
                         </div>
-                        <div class="transferFrom">
+                        <div class="transferF" id="rg-markeF" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Регион Марке</h3>
                         </div>
                     </div>
@@ -200,22 +239,22 @@
                             <h5>Куда</h5>
                         </div>
                         
-                        <div class="transferWhere">
+                        <div class="transferW" id="st-marinoW" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Сан-Марино</h3>
                         </div>
-                        <div class="transferWhere">
+                        <div class="transferW" id="riminiW" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Римини</h3>
                         </div>
-                        <div class="transferWhere">
+                        <div class="transferW" id="boloniaW" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Болонья</h3>
                         </div>
-                        <div class="transferWhere">
+                        <div class="transferW" id="rg-markeW" onclick="changeTransfer(id)" onmouseover="hoveroverFW(id)" onmouseout="hoveroutFW(id)">
                             <h3>Регион Марке</h3>
                         </div>
                     </div>
 
                     <div class="transferPrice">
-                        <h2>5000$</h2>
+                        <h2>price$</h2>
                     </div>
 
                     <div class="button" id="transferButton">
@@ -239,7 +278,7 @@
         </div>
 
         <div class="contacts">
-            <img class="imgContact" src="img/imgFooter.jpg">
+            <img class="imgContact" src="img/imgContacts.jpg">
 
             <div class="contactContent">
                 <div class="cotactText">
@@ -249,6 +288,14 @@
                     <p>email: qwe@qwe.qwe</p>
                 </div>
             </div>
+        </div>
+
+        <div class="nav" id="bottomNav">
+                
+        </div>
+
+        <div class="contactsFixed">
+            <img class="imgContactFixed" src="img/imgContactsFixed.jpg">
         </div>
         
        <script src="script.js"></script> 
