@@ -365,11 +365,11 @@ h4
 {
   float: left;
   width: calc(25% - 2px);
-  height: 45px;
-  line-height: 45px;
+  height: 48px;
+  line-height: 48px;
   text-align: center;
   margin: 0 1px;
-  border-top: 9px solid #DBDCDE;
+  border-top: 6px solid #DBDCDE;
   transition: all 0.3s;
 }
 
