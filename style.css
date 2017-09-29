@@ -181,9 +181,10 @@ h5
   left: calc(50% - 400px);
   text-align: center;
   top: calc(50% - 120px);
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
-.mainText:before
+/*.mainText:before
 {
   content: "";
   position: absolute;
@@ -193,7 +194,7 @@ h5
   z-index: -1;
   left: calc(50% - 410px);
   top: calc(50% - 130px);
-}
+}*/
 
 #mainTextBig
 {
