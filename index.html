@@ -5,7 +5,6 @@
         <title>Demi</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-        <!-- <link rel="stylesheet" href="../fonts/font-awesome.css"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
@@ -39,7 +38,7 @@
                     <p id="mainTextSmall">Ваш личный проводник по шоппингу в Италии.</p>
                 </div>
 
-                <div id="moreButton" href=".serviceBlock">
+                <div id="moreButton" onclick="goToBlockByID(id)" href=".serviceBlock">
                     <p id="buttonText">ПОДРОБНЕЕ</p>
                 </div>
             </div>
@@ -48,12 +47,9 @@
         <div class="templateBlock serviceBlock">
             <div class="centerBlock">
                 <h1>Услуги</h1>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p> -->
+
                 <div class="serviceColom">
-                    <div class="serviceBlockType" id="shoppingPreview" href=".shoppingBlock">
+                    <div class="serviceBlockType" id="shoppingPreview" onclick="goToBlockByID(id)" href=".shoppingBlock">
                         <img src="img/iconShopping.png">
                         <img class="serviceIcon" src="img/iconShoppingBW.png">
                         <h4>Шоппинг Тур</h4>
@@ -62,7 +58,7 @@
                 </div>
 
                 <div class="serviceColom">
-                    <div class="serviceBlockType" id="transferPreview" href=".transferBlock">
+                    <div class="serviceBlockType" id="transferPreview" onclick="goToBlockByID(id)" href=".transferBlock">
                         <img src="img/iconTransfer.png">
                         <img class="serviceIcon" src="img/iconTransferBW.png">
                         <h4>Трансфер</h4>
@@ -71,7 +67,7 @@
                 </div>
 
                 <div class="serviceColom">
-                    <div class="serviceBlockType" id="cargoPreview" href=".kargoBlock">
+                    <div class="serviceBlockType" id="cargoPreview" onclick="goToBlockByID(id)" href=".kargoBlock">
                         <img src="img/iconCargo.png">
                         <img class="serviceIcon" src="img/iconCargoBW.png">
                         <h4>Карго</h4>
@@ -109,10 +105,6 @@
         <div class="templateBlock shoppingBlock">
             <div class="centerBlock">
                 <h1>Шоппинг тур</h1>
-                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p> -->
 
                 <div class="shoppingContent">
                     <div class="shoppingNav">
@@ -131,10 +123,9 @@
                     </div>
                     <div class="shoppingInfo">
                         <div class="shoppingInfoContent">
-                            <div class="shoppingTextBlock" id="st-marinoShoppingBlock">
-                                <img class="imgShopping" src="img/imgShopping.jpg">
+                            <img class="imgShopping" src="img/imgShopping.jpg">
 
-                                <!-- <h2>Сан-Марино Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2> -->
+                            <div class="shoppingTextBlock" id="st-marinoShoppingBlock">
 
                                 <p class="shoppingText">Республика Сан-Марино является одним из самых выгодных мест для шоппинга. Ведь только в Сан-Марино Вы сможете купить одежду, обувь, аксессуары от известных итальянских дизайнеров со скидками 50-70%. Ко всему прочему, Сан-Марино является беспошлинной зоной, поэтому цены на многие товары приблизительно на 20% меньше, чем в Италии. <br><br>
 
@@ -151,9 +142,6 @@
                                 </div>
                             </div>
                             <div class="shoppingTextBlock" id="riminiShoppingBlock">
-                                <img class="imgShopping" src="img/imgShopping.jpg">
-
-                                <!-- <h2>Римини Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2> -->
 
                                 <p class="shoppingText">Если Вам нравится масштабный и качественный шоппинг, то самый оптимальный вариант посетить «Gros Rimini». <br><br>
 
@@ -168,9 +156,6 @@
                                 </div>
                             </div>
                             <div class="shoppingTextBlock" id="boloniaShoppingBlock">
-                                <img class="imgShopping" src="img/imgShopping.jpg">
-
-                                <!-- <h2>Болонья Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2> -->
 
                                 <p class="shoppingText">Болонья (столица региона Эмилия – Романья) знаменита не только своим старейшим университетом, но и самым большим оптовым складом в Европе — «Center Gross Bologna» (более 1 млн. кв. м.), который никого не оставит равнодушным. <br><br>
 
@@ -185,9 +170,6 @@
                                 </div>
                             </div>
                             <div class="shoppingTextBlock" id="rg-markeShoppingBlock">
-                                <img class="imgShopping" src="img/imgShopping.jpg">
-
-                                <!-- <h2>Регион МаркеLorem ipsum dolor sit amet, consectetur adipisicing elit</h2> -->
 
                                 <p class="shoppingText">Регион Марке известен не только своими великолепными видами и тем, что там был рождён великий итальянский художник и архитектор Рафаэль Санти, но и тем, что это место стало центром продажи итальянских сумок и обуви превосходного качества. <br><br>
 
@@ -224,42 +206,42 @@
 
                         <div class="transferPriceList">
                             <div class="transferPriceListElem">
-                                <div>Милан - Римини</div>
+                                <div>Милан - Римини • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     220
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Рим - Римини</div>
+                                <div>Рим - Римини • • • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     300
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Верона - Римини</div>
+                                <div>Верона - Римини • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     200
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Венеция - Римини</div>
+                                <div>Венеция - Римини • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     220
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Болонья - Римини</div>
+                                <div>Болонья - Римини • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     90
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Анкона - Римини</div>
+                                <div>Анкона - Римини • • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     90
                                     <img class="imgPrice" src="img/imgPrice.png">
@@ -274,35 +256,35 @@
 
                         <div class="transferPriceList">
                             <div class="transferPriceListElem">
-                                <div>Римини - Милан</div>
+                                <div>Римини - Милан • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     400
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Римини - Рим</div>
+                                <div>Римини - Рим • • • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     420
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Римини - Верона</div>
+                                <div>Римини - Верона • • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     300
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Римини - Венеция</div>
+                                <div>Римини - Венеция • • • • • • • • • • • • • • • • </div>
                                 <div>
                                     280
                                     <img class="imgPrice" src="img/imgPrice.png">
                                 </div>
                             </div>
                             <div class="transferPriceListElem">
-                                <div>Римини - Флоренция</div>
+                                <div>Римини - Флоренция • • • • • • • • • • • • • • </div>
                                 <div>
                                     320
                                     <img class="imgPrice" src="img/imgPrice.png">
@@ -344,15 +326,30 @@
             <div class="contactsContent">
                 <div class="cotactsText">
                     <h1>Контакты</h1>
-                    <p>+368798034</p>
-                    <p>+368798034</p>
-                    <p>email: qwe@qwe.qwe</p>
+
+                    <div class="contactsInfo">
+                        <p>Телефон, Viber, WhatsApp:</p>
+                        <p class="contactsTel">+39 339 465 03 57</p>
+                        <p class="contactsTel">+39 388 629 78 96</p>
+                    </div>
+
+                    <div class="subContactsInfo">
+                        <p>E-mail:</p>
+                        <p>support@demishopping.com</p>
+                    </div>
+
+                    <div class="subContactsInfo">
+                        <p>Instagram:</p>
+                        <p>@demishopping</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="nav" id="bottomNav">
-                
+            <p class="nrkkText">Designed by</p>
+            <a href="http://www.nrkk.ru/"><img class="nrkkImg" src="img/NRKK_logo.png"></a>
+            <p class="rights">All rights reserved.</p>
         </div>
 
         <div class="contactsFixed">
@@ -363,10 +360,23 @@
                 <img class="imgXhover" src="img/xHover.png">
 
                 <div class="cotactsFixedText">
-                    <h1>Контакты</h1>
-                    <p>+368798034</p>
-                    <p>+368798034</p>
-                    <p>email: qwe@qwe.qwe</p>
+                    <h1>Связаться с нами</h1>
+
+                    <div class="contactsInfo">
+                        <p>Телефон, Viber, WhatsApp:</p>
+                        <p class="contactsTel">+39 339 465 03 57</p>
+                        <p class="contactsTel">+39 388 629 78 96</p>
+                    </div>
+
+                    <div class="subContactsInfo">
+                        <p>E-mail:</p>
+                        <p>support@demishopping.com</p>
+                    </div>
+
+                    <div class="subContactsInfo">
+                        <p>Instagram:</p>
+                        <p>@demishopping</p>
+                    </div>
                 </div>
             </div>
         </div>
