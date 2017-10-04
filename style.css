@@ -539,6 +539,12 @@ h5
   right: 0;
 }
 
+#twoWay
+{
+  width: 400px;
+  text-align: center;
+}
+
 .kargoBlock
 {
   height: 360px;
