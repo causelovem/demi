@@ -132,7 +132,7 @@ h5
 
 .nav
 {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 97px;
   z-index: 2;
@@ -183,7 +183,7 @@ h5
 {
   font-family: Raleway-Medium;
   font-size: 115px;
-  color: #000;
+  color: #222;
   padding-bottom: 20px;
   padding-top: 30px;
 }
@@ -192,7 +192,7 @@ h5
 {
   font-family: RobotoCondensed-Regular;
   font-size: 30px;
-  color: #000;
+  color: #222;
 }
 
 .logo
@@ -269,7 +269,7 @@ h5
   background-color: #FFF;
   position: relative;
   cursor: pointer;
-  border: 0.5px solid black;
+  border: 0.5px solid #555;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -352,7 +352,7 @@ h5
 {
   width: 190px;
   height: 49px;
-  background-color: #000;
+  background-color: #222;
   cursor: pointer;
   position: absolute;
   left: calc(50% - 95px);
@@ -644,7 +644,7 @@ h5
 
 #bottomNav
 {
-  background-color: #000;
+  background-color: #222;
   height: 60px;
   position: relative;
 }
@@ -667,11 +667,11 @@ h5
 .rights
 {
   position: absolute;
-  width: 150px;
+  width: 250px;
   height: 60px;
   line-height: 60px;
   text-align: center;
-  left: calc(50% - 75px);
+  left: calc(50% - 125px);
 }
 
 #bottomNav p
